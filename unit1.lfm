@@ -1,0 +1,119 @@
+object settings: Tsettings
+  Left = 817
+  Height = 240
+  Top = 201
+  Width = 382
+  BorderStyle = bsDialog
+  Caption = 'Settings'
+  ClientHeight = 240
+  ClientWidth = 382
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.0.10.0'
+  object okbtn: TBitBtn
+    Cursor = crHandPoint
+    Left = 264
+    Height = 40
+    Top = 184
+    Width = 104
+    Default = True
+    DefaultCaption = True
+    Enabled = False
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = okbtnClick
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Cursor = crHandPoint
+    Left = 16
+    Height = 40
+    Top = 184
+    Width = 103
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object BitBtn3: TBitBtn
+    Cursor = crHandPoint
+    Left = 136
+    Height = 40
+    Top = 184
+    Width = 104
+    Caption = 'Test'
+    OnClick = BitBtn3Click
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 16
+    Top = 24
+    Width = 67
+    Caption = 'Mysql host:'
+    ParentColor = False
+  end
+  object host: TEdit
+    Left = 154
+    Height = 26
+    Top = 19
+    Width = 206
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 16
+    Top = 64
+    Width = 59
+    Caption = 'Database:'
+    ParentColor = False
+  end
+  object database: TEdit
+    Left = 154
+    Height = 26
+    Top = 61
+    Width = 206
+    TabOrder = 4
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 16
+    Top = 104
+    Width = 62
+    Caption = 'Username:'
+    ParentColor = False
+  end
+  object login: TEdit
+    Left = 154
+    Height = 26
+    Top = 100
+    Width = 206
+    TabOrder = 5
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 16
+    Top = 144
+    Width = 61
+    Caption = 'Password:'
+    ParentColor = False
+  end
+  object password: TEdit
+    Left = 154
+    Height = 26
+    Top = 138
+    Width = 206
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 6
+  end
+  object connection: TMySQL57Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = True
+    SkipLibraryVersionCheck = False
+    Left = 336
+    Top = 8
+  end
+end
