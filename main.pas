@@ -101,14 +101,14 @@ begin
       query.SQL.Add(Inif.ReadString('Main','Query','select date,time,host,priority,level,facility,program, msg from logs order by seq desc;'));
       //SQL. string := Inif.ReadString('Main','Query','');
       Inif.Destroy;
-      try
+ //     try
         connect.Connected := True;
         query.Active:= True;
-      except
-        query.Active:= False;
-        connect.Connected := False;
+//      except
+//        query.Active:= False;
+//        connect.Connected := False;
 
-      end;
+//      end;
   end;
 end;
 
